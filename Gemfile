@@ -11,19 +11,19 @@ gem 'jbuilder',     '2.4.1'
 gem 'coffee-script-source', '1.8.0'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.12'
-  gem 'byebug',  '9.0.0', platform: :mri
+	gem 'tiny_tds'
+	gem 'activerecord-sqlserver-adapter'
 end
 
 group :development do
-  gem 'web-console',           '3.1.1'
-  gem 'listen',                '3.0.8'
-  gem 'spring',                '1.7.2'
-  gem 'spring-watcher-listen', '2.0.0'
+	gem 'web-console',           '3.1.1'
+	gem 'listen',                '3.0.8'
+	gem 'spring',                '1.7.2'
+	gem 'spring-watcher-listen', '2.0.0'
 end
 
 group :production do
-  gem 'pg', '0.18.4'
+	gem 'pg', '0.18.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
